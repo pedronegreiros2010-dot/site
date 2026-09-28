@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AutoPrime — veículos seminovos e novos com qualidade e procedência.">
+<title>AutoPrime | Venda de Carros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header"><div class="container nav">
+<a class="logo" href="#"><span>AP</span> AutoPrime</a>
+<nav id="navMenu"><a href="#inicio">Início</a><a href="#estoque">Estoque</a><a href="#sobre">Sobre nós</a><a href="#contato">Contato</a></nav>
+<a class="nav-cta" href="#estoque">Ver estoque</a><button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="container hero-grid"><div class="hero-copy">
+<p class="eyebrow">SEU PRÓXIMO CARRO ESTÁ AQUI</p><h1>Encontre o carro ideal para <span>cada momento.</span></h1>
+<p class="hero-text">Veículos selecionados, revisados e com procedência. Escolha seu próximo carro com segurança e transparência.</p>
+<div class="hero-actions"><a class="btn primary" href="#estoque">Explorar veículos</a><a class="btn secondary" href="#contato">Falar com especialista</a></div>
+<div class="stats"><div><strong>+120</strong><span>veículos vendidos</span></div><div><strong>4.9/5</strong><span>avaliação dos clientes</span></div><div><strong>10 anos</strong><span>de experiência</span></div></div>
+</div><div class="hero-card"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=85" alt="Carro esportivo em destaque">
+<div class="hero-badge"><span>★</span> Destaque da semana</div><div class="hero-info"><div><span>Chevrolet</span><strong>Camaro SS 6.2 V8</strong></div><strong class="price">R$ 389.900</strong></div></div></div></section>
+<section class="inventory section" id="estoque"><div class="container">
+<div class="section-head"><div><p class="eyebrow">NOSSO ESTOQUE</p><h2>Escolha seu próximo carro</h2></div><p>Ofertas selecionadas para você.</p></div>
+<div class="filters"><div class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Buscar por modelo ou marca..."></div>
+<select id="brand"><option value="">Todas as marcas</option><option>BMW</option><option>Chevrolet</option><option>Fiat</option><option>Honda</option><option>Toyota</option><option>Volkswagen</option></select>
+<select id="category"><option value="">Todas as categorias</option><option>SUV</option><option>Sedan</option><option>Hatch</option><option>Picape</option><option>Esportivo</option></select>
+<select id="sort"><option value="featured">Destaques</option><option value="low">Menor preço</option><option value="high">Maior preço</option><option value="year">Mais novos</option></select></div>
+<div class="cars-grid" id="carsGrid"></div><div class="empty" id="empty">Nenhum veículo encontrado. Tente alterar os filtros.</div>
+</div></section>
+<section class="about section" id="sobre"><div class="container about-grid"><div class="about-image"><img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=1200&q=85" alt="Carro premium estacionado"></div>
+<div class="about-copy"><p class="eyebrow">POR QUE A AUTOPRIME?</p><h2>Comprar um carro pode ser simples.</h2><p>Na AutoPrime, cada veículo passa por uma seleção criteriosa para entregar tranquilidade em cada quilômetro. Nosso atendimento é consultivo, transparente e feito para você.</p>
+<div class="checks"><div><b>✓</b><span><strong>Veículos revisados</strong>Inspeção completa antes da entrega.</span></div><div><b>✓</b><span><strong>Procedência garantida</strong>Histórico e documentação conferidos.</span></div><div><b>✓</b><span><strong>Financiamento</strong>Encontre condições que cabem no seu orçamento.</span></div></div></div></div></section>
+<section class="contact section" id="contato"><div class="container contact-card"><div><p class="eyebrow">FALE CONOSCO</p><h2>Pronto para encontrar seu carro?</h2><p>Converse com nosso time e receba atendimento personalizado.</p></div><div class="contact-actions"><a class="btn whatsapp" id="whatsappBtn" href="#" target="_blank" rel="noopener">◉ Falar no WhatsApp</a><a class="btn light" href="tel:+5586999999999">☎ (86) 99999-9999</a></div></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><div><a class="logo" href="#"><span>AP</span> AutoPrime</a><p>Seu próximo carro começa aqui.</p></div><div><strong>Atendimento</strong><p>Seg–Sex: 8h às 18h<br>Sáb: 8h às 13h</p></div><div><strong>Contato</strong><p>(86) 99999-9999<br>contato@autoprime.com</p></div></div><div class="container copyright">© 2026 AutoPrime. Todos os direitos reservados.</div></footer>
+<div class="modal" id="modal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-box"><button class="modal-close" data-close aria-label="Fechar">×</button><img id="modalImg" src="" alt=""><div class="modal-content"><p class="eyebrow" id="modalBrand"></p><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="modal-specs" id="modalSpecs"></div><div class="modal-bottom"><strong id="modalPrice"></strong><a id="modalWhatsapp" class="btn whatsapp" target="_blank" rel="noopener">Tenho interesse</a></div></div></div></div>
+<script src="script.js"></script>
+</body></html>
